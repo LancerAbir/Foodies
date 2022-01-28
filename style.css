@@ -18,6 +18,8 @@
 :root {
     --themeColor: #1d1d1f;
     --subColor: #06c167;
+    --headerBackground: #f3fcf7;
+    --sectionImageBackground: #f3fafb;
 }
 
 /* var(--themeColor)
@@ -59,6 +61,13 @@ h1 {
 .container {
     max-width: 1177px;
     margin: 0 auto;
+}
+
+.section-sub-title {
+    color: var(--themeColor);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 .section-title h2 {
