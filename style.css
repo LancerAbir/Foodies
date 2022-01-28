@@ -22,6 +22,10 @@
     --sectionImageBackground: #f3fafb;
 }
 
+.header-bg {
+    background-color: var(--headerBackground);
+}
+
 /* var(--themeColor)
 var(--subColor) */
 
