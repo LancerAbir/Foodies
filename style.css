@@ -38,14 +38,10 @@ img {
 
 body {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--themeColor);
     font-weight: normal;
     line-height: 142.4%;
-}
-
-section {
-    padding-bottom: 85px;
 }
 
 h1,
@@ -57,28 +53,30 @@ h5 {
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 4.6875rem;
     line-height: 90.77px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .container {
-    max-width: 1177px;
+    width: 86.2vw;
     margin: 0 auto;
 }
 
-.section-sub-title {
+.section-sub-title h4 {
     color: var(--themeColor);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.9375rem;
+    margin-bottom: 30px;
     line-height: 18px;
 }
 
 .section-title h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 500;
     line-height: 73px;
+    margin-bottom: 70px;
 }
 
 .text-center {
@@ -89,6 +87,13 @@ h1 {
     text-align: left;
 }
 
+.border-top {
+    border-top: 1.5px solid #eaeaea;
+}
+
+.border-bottom {
+    border-bottom: 1.5px solid #eaeaea;
+}
 /* ============================ Header Area ============================ */
 
 /* Header Top */
@@ -96,7 +101,7 @@ h1 {
 .logo a {
     color: var(--subColor);
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 39px;
 }
 
@@ -113,7 +118,7 @@ h1 {
 }
 
 .main-menu nav li a {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19px;
     font-weight: normal;
     color: var(--themeColor);
@@ -164,10 +169,365 @@ a.section-btn img {
 a.section-btn:hover {
     background-color: var(--themeColor);
 }
+
+/* Header Brand Logo */
+
+.brand-logo img {
+    max-width: 155px;
+    display: inline-block;
+    margin-right: 58px;
+    padding: 50px 0px;
+    opacity: 0.55;
+}
 /* ============================ Features Section ============================ */
+section.features {
+    padding-bottom: 132px;
+}
+.features-box img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    max-width: 32px;
+    margin-top: -13px;
+    height: auto;
+}
+
+.features-box {
+    position: relative;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    padding: 70px 0px;
+}
+
+.features-content {
+    margin-left: 70px;
+}
+
+.features-content h3 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+
+.features-area {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+
+.features-box:hover {
+    background-color: red;
+}
 /* ============================ Benefit Section ============================ */
+.benefit {
+    display: flex;
+    margin-bottom: 180px;
+}
+
+.benefit-left {
+    flex: 1;
+}
+
+.benefit-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.benefit-left img {
+    max-width: 445px;
+    height: 600px;
+    display: flex;
+    background-color: var(--sectionImageBackground);
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 90px;
+}
+
+.benefit-list ul li {
+    line-height: 19px;
+    font-weight: normal;
+    margin-bottom: 21px;
+    position: relative;
+    padding-left: 48px;
+}
+
+.benefit-list ul li img {
+    max-width: 26px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 /* ============================ Stars Section ============================ */
+section.stars-area {
+    padding-bottom: 190px;
+}
+.stars {
+    display: flex;
+}
+
+.stars-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stars-right {
+    flex: 1;
+    right: 0;
+    position: relative;
+}
+
+.stars-count {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.stars-count-box {
+    flex: 1;
+    font-size: 0.9375rem;
+    line-height: 18px;
+    font-weight: normal;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stars-count-box h2 {
+    font-size: 2.5rem;
+    color: var(--subColor);
+    margin-bottom: 25px;
+}
+
+.stars-count-box p {
+    opacity: 0.65;
+}
+
+.stars-right img {
+    max-width: 341px;
+    height: auto;
+}
+
+.stars-right img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--sectionImageBackground);
+    padding-left: 96px;
+    padding-bottom: 95px;
+    max-width: 445px;
+    height: 513px;
+}
 /* ============================ Foods Section ============================ */
+section.foods {
+    padding-bottom: 190px;
+}
+.foods-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foods-box {
+    width: 25%;
+}
+
+.foods-box img {
+    max-width: 292px;
+    height: auto;
+}
+
+.foods-box-content {
+    padding: 37px;
+    line-height: 19px;
+    background-color: var(--headerBackground);
+}
+
+.foods-box-content h2 {
+    font-size: 2rem;
+    line-height: 39px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.foods-box-content p {
+    margin-bottom: 38px;
+}
+
+.foods-box-btn a {
+    padding: 11px;
+    font-size: 0.9375rem;
+    color: var(--subColor);
+    transition: 0.3s;
+    border: 1px solid #fff;
+}
+
+.foods-box-btn a:hover {
+    border: 1px solid var(--themeColor);
+    background-color: var(--themeColor);
+}
+.foods-box-btn img {
+    margin-left: 7px;
+}
 /* ============================ Product Section ============================ */
+section.product-section {
+    padding-bottom: 190px;
+}
+.foods-box-btn img {
+    margin-left: 7px;
+}
+
+section.foods {
+    padding-bottom: 190px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-box {
+    border: 2px solid rgba(118, 118, 117, 0.25);
+    padding: 24px 40px;
+    transition: 0.3s;
+}
+
+/* a:hover {
+    background-color: var(--themeColor);
+    border: 2px solid var(--themeColor);
+} */
+
+.product-box h3 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-box a {
+    color: var(--subColor);
+    padding: 17px 30px;
+    display: inline-block;
+    line-height: 19px;
+    border: 2px solid #06c167;
+    transition: 0.3s;
+}
+
+.btn-box a img {
+    margin-left: 12px;
+}
+
+.product-box:hover {
+    border: 2px solid var(--subColor);
+}
+.product-box:hover .btn-box a {
+    background-color: var(--themeColor);
+    border: 2px solid var(--themeColor);
+}
+
 /* ============================ Try it Section ============================ */
+.try-it {
+    padding-bottom: 64px;
+}
+.try-it-bg {
+    background-image: url(./img/tryIt.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.try-it-content h2 {
+    color: #fff;
+    font-size: 3.75rem;
+    line-height: 73px;
+    margin-bottom: 37px;
+}
+
+.try-it-content {
+    padding: 110px 0;
+}
 /* ============================ Footer Area ============================ */
+footer.section-footer {
+    padding-top: 76px;
+    padding-bottom: 38px;
+}
+
+.footer-top {
+    display: flex;
+}
+
+.footer-content {
+    width: 30%;
+    margin-right: 140px;
+    line-height: 19px;
+}
+
+.footer-content .logo {
+    margin-bottom: 40px;
+}
+
+.footer-content p {
+    margin-bottom: 50px;
+}
+
+.footer-social img {
+    margin-right: 21px;
+}
+
+.footer-about {
+    width: 20%;
+}
+
+.footer-title h3 {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.footer-top ul li {
+    margin-bottom: 16px;
+}
+
+.footer-company {
+    width: 20%;
+}
+
+.footer-get_in {
+    width: 31%;
+}
+
+.footer-get_in p {
+    margin-bottom: 37px;
+}
+
+.footer-btn input[type="email"] {
+    border: navajowhite;
+    background-color: #f0f1ec;
+    padding: 28px 0px;
+    color: var(--themeColor);
+    padding-left: 20px;
+}
+
+.footer-title a.section-btn {
+}
+
+.footer-btn {
+    display: flex;
+}
+
+.footer-btn a.section-btn {
+    margin-left: 7px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 95px;
+}
