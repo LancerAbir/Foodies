@@ -60,6 +60,7 @@ h1 {
     font-size: 75px;
     line-height: 90.77px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -80,7 +81,89 @@ h1 {
     line-height: 73px;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
 /* ============================ Header Area ============================ */
+
+/* Header Top */
+
+.logo a {
+    color: var(--subColor);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 0;
+}
+
+.main-menu nav li {
+    display: inline-block;
+}
+
+.main-menu nav li a {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+    color: var(--themeColor);
+    margin-left: 37px;
+    transition: 0.3s;
+}
+
+.main-menu nav li a:hover {
+    color: var(--subColor);
+    border-bottom: 2px solid var(--subColor);
+    padding-bottom: 8px;
+}
+.main-menu nav li a.active {
+    color: var(--subColor);
+}
+.main-menu nav li a.active:hover {
+    color: var(--themeColor);
+    border-bottom: 2px solid var(--themeColor);
+}
+
+/* Header Bottom */
+.header-bottom {
+    display: flex;
+}
+
+.header-content {
+    width: 45%;
+    margin-right: 122px;
+    margin-top: 45px;
+}
+
+a.section-btn {
+    display: inline-block;
+    background-color: var(--subColor);
+    color: #fff;
+    transition: 0.3s;
+    padding: 24px 31px;
+}
+
+a.section-btn img {
+    margin-left: 20px;
+}
+
+.header-content p {
+    margin-bottom: 30px;
+}
+
+a.section-btn:hover {
+    background-color: var(--themeColor);
+}
 /* ============================ Features Section ============================ */
 /* ============================ Benefit Section ============================ */
 /* ============================ Stars Section ============================ */
