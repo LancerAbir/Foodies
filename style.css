@@ -7,7 +7,9 @@
 /* ============================ Product Section ============================ */
 /* ============================ Try it Section ============================ */
 /* ============================ Footer Area ============================ */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -124,28 +126,56 @@ h1 {
     color: var(--themeColor);
     margin-left: 37px;
     transition: 0.3s;
+    position: relative;
 }
 
 .main-menu nav li a:hover {
     color: var(--subColor);
-    border-bottom: 2px solid var(--subColor);
-    padding-bottom: 8px;
 }
+
+.main-menu nav li a:hover::before {
+    position: absolute;
+    color: var(--subColor);
+    width: 6px;
+    height: 6px;
+    background-color: var(--subColor);
+    bottom: -13px;
+    left: 50%;
+    content: "";
+    margin-left: -3px;
+    border-radius: 50%;
+}
+
 .main-menu nav li a.active {
     color: var(--subColor);
 }
+
+.main-menu nav li a.active::before {
+    position: absolute;
+    color: var(--subColor);
+    width: 6px;
+    height: 6px;
+    background-color: var(--subColor);
+    bottom: -13px;
+    left: 50%;
+    content: "";
+    margin-left: -3px;
+    border-radius: 50%;
+}
+
 .main-menu nav li a.active:hover {
     color: var(--themeColor);
-    border-bottom: 2px solid var(--themeColor);
 }
 
 /* Header Bottom */
 .header-bottom {
     display: flex;
+    padding-top: 70px;
+    padding-bottom: 125px;
 }
 
 .header-content {
-    width: 45%;
+    flex: 1;
     margin-right: 122px;
     margin-top: 45px;
 }
@@ -170,6 +200,55 @@ a.section-btn:hover {
     background-color: var(--themeColor);
 }
 
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    position: relative;
+}
+
+.good-quality {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 41px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    transition: 0.3s;
+    /* position: relative; */
+    /* z-index: 5; */
+}
+
+.good-quality:hover {
+    background-color: var(--subColor);
+    color: #fff;
+}
+
+.good-quality img {
+    min-width: 40px;
+    min-height: 40px;
+    margin-right: 8px;
+}
+.good-quality p {
+    margin-right: 5px;
+}
+
+/* edit abole  */
+
+.good-quality .header-large-img {
+    position: absolute;
+    top: -201px;
+    right: 16%;
+    width: 468px;
+    height: auto;
+    /* z-index: -2; */
+}
 /* Header Brand Logo */
 
 .brand-logo img {
@@ -185,11 +264,12 @@ section.features {
 }
 .features-box img {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
-    max-width: 32px;
-    margin-top: -13px;
-    height: auto;
+    margin-top: -10px;
+    padding: 22px;
+    background-color: #f3fcf7;
+    border-radius: 10px;
 }
 
 .features-box {
@@ -197,11 +277,11 @@ section.features {
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
-    padding: 70px 0px;
+    margin: 70px 0px;
 }
 
 .features-content {
-    margin-left: 70px;
+    margin-left: 84px;
 }
 
 .features-content h3 {
@@ -218,9 +298,6 @@ section.features {
     justify-content: space-between;
 }
 
-.features-box:hover {
-    background-color: red;
-}
 /* ============================ Benefit Section ============================ */
 .benefit {
     display: flex;
@@ -229,6 +306,7 @@ section.features {
 
 .benefit-left {
     flex: 1;
+    position: relative;
 }
 
 .benefit-content {
@@ -247,6 +325,15 @@ section.features {
     padding-left: 48px;
     padding-right: 48px;
     padding-bottom: 90px;
+}
+
+.benefit-left .benefitDot--img img {
+    position: absolute;
+    background-color: transparent;
+    height: auto;
+    top: 21%;
+    right: -22%;
+    z-index: -9;
 }
 
 .benefit-list ul li {
