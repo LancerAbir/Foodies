@@ -12,7 +12,7 @@
         <!-----*****---- Header Start -----*****---->
         <header class="header header-bg">
             <div class="container">
-                <div class="header-top">
+                <div class="header-top" id="myHeader">
                     <div class="logo"><a href="index.html">Foodies</a></div>
                     <div class="main-menu">
                         <nav>
@@ -34,8 +34,9 @@
                         </h1>
                         <p>
                             We strive to provide a space where guests can
-                            connect with themselves and explore their full
-                            potential, offering a safe place.
+                            connect with <br />
+                            themselves and explore their full potential,
+                            offering a safe place.
                         </p>
 
                         <a href="#" class="section-btn">
@@ -53,11 +54,38 @@
                                 alt="Good Quality"
                             />
                             <p>Good Quality Product</p>
-
-                            <div class="header-large-img">
+                        </div>
+                        <div class="header-large-img">
+                            <img src="./img/header.png" alt="Header Image" />
+                            <div class="header-dot">
                                 <img
-                                    src="./img/header.png"
-                                    alt="Header Image"
+                                    src="./img/Polcadot.png"
+                                    alt="Header Dot Image"
+                                />
+                            </div>
+                        </div>
+                        <div class="header-rating">
+                            <p>5.0 Ratings</p>
+                            <div class="header-rating-icon">
+                                <img
+                                    src="./img/rating.png"
+                                    alt="Header Ratings"
+                                />
+                                <img
+                                    src="./img/rating.png"
+                                    alt="Header Ratings"
+                                />
+                                <img
+                                    src="./img/rating.png"
+                                    alt="Header Ratings"
+                                />
+                                <img
+                                    src="./img/rating.png"
+                                    alt="Header Ratings"
+                                />
+                                <img
+                                    src="./img/rating.png"
+                                    alt="Header Ratings"
                                 />
                             </div>
                         </div>
@@ -349,7 +377,7 @@
                     <h2>Most Popular Product</h2>
                 </div>
                 <div class="product-item">
-                    <div class="product-box text-center">
+                    <div class="product-box text-center product-box--active">
                         <img src="./img/product1.png" alt="Product Image" />
                         <div class="header-ratingg">
                             <img src="./img/rating.png" alt="Header Ratings" />
@@ -522,5 +550,21 @@
             </div>
         </footer>
         <!-----*****---- Footer End -----*****---->
+        <script>
+            window.onscroll = function () {
+                myFunction();
+            };
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
     </body>
 </html>
