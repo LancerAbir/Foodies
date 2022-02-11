@@ -27,6 +27,16 @@ img {
     max-width: 100%;
 }
 
+.displayFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 0;
+    z-index: 999999;
+    background-color: var(--headerBackground);
+}
+
 /* ============================ Google Fonts ============================ */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
 
@@ -96,6 +106,8 @@ h1 {
     position: fixed;
     top: 0;
     width: 86.2vw;
+    right: -50%;
+    margin-right: 55.8vw;
 }
 
 .logo a {
@@ -106,13 +118,7 @@ h1 {
 }
 
 .header-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 42px 0;
     z-index: 999999;
-    background-color: var(--headerBackground);
 }
 
 .main-menu nav li {
@@ -667,9 +673,6 @@ footer.section-footer {
     padding-left: 20px;
 }
 
-.footer-title a.section-btn {
-}
-
 .footer-btn {
     display: flex;
 }
@@ -681,4 +684,495 @@ footer.section-footer {
 .footer-bottom {
     text-align: center;
     padding-top: 95px;
+}
+/* ============================ Responsive Css  ============================ */
+@media screen and (max-width: 576px) {
+    .sticky {
+        display: none;
+    }
+    .main-menu {
+        display: none;
+    }
+    .header-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-content h1 {
+        margin-bottom: 25px;
+        font-size: 60px;
+        line-height: 1.2;
+    }
+    .header-rating {
+        top: 490px;
+        left: 50%;
+        width: 213px;
+        margin-left: -105px;
+        height: 53px;
+    }
+    .header-content p {
+        margin-bottom: 50px;
+    }
+    a.section-btn {
+        width: 100%;
+    }
+    .header-large-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .header-right {
+        margin-top: 50px;
+    }
+    .header-large-img img {
+        height: auto;
+        width: 496px;
+    }
+    .good-quality {
+        position: absolute;
+        left: 50%;
+        top: 552px;
+        width: 226px;
+        margin-left: -113px;
+    }
+    .header-dot img {
+        width: 265px;
+        height: auto;
+    }
+    .header-content {
+        width: 100%;
+    }
+    .header-bottom {
+        padding-top: 0;
+    }
+    .header {
+        padding-bottom: 566px;
+    }
+    .brand-logo {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .brand-logo img {
+        padding: 50px 0px;
+
+        margin-bottom: -42px;
+    }
+    .features-area {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .benefit-left img {
+        padding-bottom: 48px;
+    }
+    .benefit-content {
+        margin-top: 80px;
+        text-align: center;
+    }
+    .section-sub-title {
+        width: 100%;
+    }
+    .section-sub-title h4 {
+        font-size: 18px;
+    }
+    .section-title {
+        width: 100%;
+    }
+    .section-title h2 {
+        font-size: 40px;
+
+        line-height: 58px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .benefit {
+        flex-direction: column;
+    }
+    .stars {
+        flex-direction: column;
+    }
+    .benefit-list {
+        width: 100%;
+    }
+    .benefit {
+        margin-bottom: 150px;
+    }
+    .stars-count {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .stars-count-box {
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    .stars-content a.section-btn {
+        text-align: center;
+        padding: 38px 40px;
+        font-size: 19px;
+    }
+    section.stars-area {
+        padding-bottom: 620px;
+    }
+    .stars-right {
+        margin-top: 60px;
+    }
+    .stars-right img {
+        min-width: 495px;
+        height: auto;
+    }
+    .product-box {
+        margin-bottom: 30px;
+    }
+    .try-it-content h2 {
+        line-height: 52px;
+        font-size: 37px;
+    }
+    section.product-section {
+        padding-bottom: 135px;
+    }
+    .stars-count-box h2 {
+        font-size: 50px;
+    }
+    .benefit-list ul li {
+        line-height: 22px;
+        padding-left: 0;
+    }
+    .section-sub-title {
+        width: 100%;
+        text-align: center;
+    }
+    .foods-box img {
+        min-width: 100%;
+        height: auto;
+    }
+    .foods-box-content {
+        min-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .product-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .footer-content .logo {
+        margin-bottom: 18px;
+    }
+    .footer-content p {
+        margin-bottom: 35px;
+    }
+    .footer-about {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .footer-title h3 {
+        margin-bottom: 30px;
+    }
+    .footer-company {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .footer-get_in {
+        width: 100%;
+    }
+    .footer-top {
+        display: flex;
+        font-size: 18px;
+    }
+    .benefit-left .benefitDot--img img {
+        right: -36px;
+    }
+    .foods-list {
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sticky {
+        display: none;
+    }
+    .main-menu {
+        display: none;
+    }
+    .header-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-content h1 {
+        margin-bottom: 25px;
+        font-size: 60px;
+        line-height: 1.2;
+    }
+    .header-rating {
+        top: 770px;
+        left: 50%;
+        width: 213px;
+        margin-left: -105px;
+        height: 53px;
+    }
+    .features-box {
+        margin-right: 18px;
+    }
+    .header-content p {
+        margin-bottom: 50px;
+    }
+    a.section-btn {
+        width: 100%;
+    }
+    .header-large-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .header-right {
+        margin-top: 50px;
+    }
+    .header-large-img img {
+        height: auto;
+        width: 660px;
+    }
+    .good-quality {
+        position: absolute;
+        left: 50%;
+        top: 838px;
+        width: 226px;
+        margin-left: -113px;
+    }
+    .header-dot img {
+        width: 345px;
+        height: auto;
+    }
+    .header-content {
+        width: 100%;
+    }
+    .header-bottom {
+        padding-top: 0;
+    }
+    .header {
+        padding-bottom: 566px;
+    }
+    .brand-logo {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .brand-logo img {
+        padding: 50px 0px;
+
+        margin-bottom: -42px;
+    }
+    .features-area {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .benefit-left img {
+        padding-bottom: 48px;
+    }
+    .benefit-content {
+        margin-top: 80px;
+        text-align: center;
+    }
+    .section-sub-title {
+        width: 100%;
+    }
+    .section-sub-title h4 {
+        font-size: 18px;
+    }
+    .section-title {
+        width: 100%;
+    }
+    .section-title h2 {
+        font-size: 40px;
+
+        line-height: 58px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .benefit {
+        flex-direction: column;
+    }
+    .stars {
+        flex-direction: column;
+    }
+    .benefit-list {
+        width: 100%;
+    }
+    .benefit {
+        margin-bottom: 150px;
+    }
+    .stars-count {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .stars-count-box {
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    .stars-content a.section-btn {
+        text-align: center;
+        padding: 38px 40px;
+        font-size: 19px;
+    }
+    section.stars-area {
+        padding-bottom: 900px;
+    }
+    .stars-right {
+        margin-top: 60px;
+    }
+    .stars-right img {
+        min-width: 660px;
+        height: auto;
+    }
+    .product-box {
+        margin-bottom: 30px;
+    }
+    .try-it-content h2 {
+        line-height: 52px;
+        font-size: 37px;
+    }
+    section.product-section {
+        padding-bottom: 135px;
+    }
+    .stars-count-box h2 {
+        font-size: 50px;
+    }
+    .benefit-list ul li {
+        line-height: 22px;
+        padding-left: 0;
+    }
+    .section-sub-title {
+        width: 100%;
+        text-align: center;
+    }
+    .foods-box img {
+        min-width: 100%;
+        height: 500px;
+    }
+    .foods-box-content {
+        min-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: -53px;
+    }
+    .product-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .footer-content .logo {
+        margin-bottom: 18px;
+    }
+    .footer-content p {
+        margin-bottom: 35px;
+    }
+    .footer-about {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .footer-title h3 {
+        margin-bottom: 30px;
+    }
+    .footer-company {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .footer-get_in {
+        width: 100%;
+    }
+    .footer-top {
+        display: flex;
+        font-size: 18px;
+    }
+    .benefit-left .benefitDot--img img {
+        right: 30px;
+    }
+    .foods-list {
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .sticky {
+        margin-right: 56.9vw;
+    }
+    h1 {
+        line-height: 77.77px;
+        margin-bottom: 23px;
+        font-size: 60px;
+    }
+    .brand-logo img {
+        max-width: 126px;
+        margin-right: 24px;
+    }
+    .brand-logo {
+        padding-bottom: 70px;
+    }
+    .features-box {
+        font-size: 13px;
+    }
+    .features-box img {
+        padding: 18px;
+    }
+    .features-box img {
+        top: 3px;
+    }
+    .features-content h3 {
+        font-size: 17px;
+    }
+    .benefit-content {
+        padding-left: 70px;
+    }
+    .section-title h2 {
+        line-height: 68px;
+        font-size: 50px;
+    }
+    .stars-content {
+        max-width: 360px;
+    }
+    .try-it-content h2 {
+        font-size: 50px;
+    }
+    .footer-content {
+        margin-right: 50px;
+    }
+    .footer-btn a.section-btn {
+        margin-left: -37px;
+    }
+    .footer-btn input[type="email"] {
+        margin-left: -12px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
 }
